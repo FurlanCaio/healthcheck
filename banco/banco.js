@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 async function checkConnectionMongoDB() {
     const startTime = Date.now();
     try {
-        await mongoose.connect('mongodb://127.0.0.1:273213123017/User', {
+        await mongoose.connect('mongodb://127.0.0.1:27017/User', {
             serverSelectionTimeoutMS: 200,
             connectTimeoutMS: 200,
         });
